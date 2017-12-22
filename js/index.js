@@ -336,11 +336,11 @@ function createHome(){
 })(window);
 
 function search(url) {
-  var copyText = document.getElementById("search__input");
+  var command = document.getElementById("search__input").value;
+  var keyword = command.split(' ').slice(1).join(' ');
+  // keyword.splice(0, 1);
 
-	window.open(url + copyText.value, '_blank');
-  // console.log("Copied the text: " + copyText.value);
-  // console.log(copyText)
+	window.open(url + keyword, '_blank');
 }
 function checkType() {
   if(event.keyCode == 13) {
