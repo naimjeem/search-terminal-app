@@ -251,6 +251,7 @@ $.getJSON('https://freegeoip.net/json/', function(data){
     console.log(data);
   });
 
+  document.querySelector('#user_agent').innerHTML = navigator.userAgent;
 
 	(function() {
 
@@ -351,22 +352,22 @@ function checkType() {
   console.log(searchKey[0]);
     if (searchKey[0] == 'g') {
       var google = 'https://www.google.com/search?source=hp&ei=vsw7WuXzOqOevQSk3qfQBQ&q=';
-      // searchKey.splice(0, 1);
+      searchKey.splice(0, 1);
       search(google);
       // document.getElementById("demo").innerHTML = google + searchKey;
     } else if (searchKey[0] == 'y') {
       var yt = 'https://www.youtube.com/results?search_query=';
-      searchKey.splice(0, 1);
+      // searchKey.splice(0, 1);
       search(yt);
       // document.getElementById("demo").innerHTML = yt + searchKey;
     } else if (searchKey[0] == 's') {
       var stack = 'https://stackoverflow.com/search?q=';
-      searchKey.splice(0, 1);
+      // searchKey.splice(0, 1);
       search(stack);
       // document.getElementById("demo").innerHTML = stack + searchKey;
     } else if (searchKey[0] == 'git') {
       var git = 'https://github.com/search?utf8=%E2%9C%93&q=';
-      searchKey.splice(0, 1);
+      // searchKey.splice(0, 1);
       search(git);
       // document.getElementById("demo").innerHTML = git + searchKey;
     }      

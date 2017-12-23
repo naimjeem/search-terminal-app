@@ -265,7 +265,7 @@ span.green{
 }
 .js .search--open .terminal__line:nth-child(2),
 .js .search--open .terminal__line:nth-child(3) {
-	width: 50ch;
+	width: 200ch;
 }
 .js .search--open .terminal__line:nth-child(4) {
 	width: 50ch;
